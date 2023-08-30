@@ -24,7 +24,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   split()
 
 - Do string methods change the original string? How would you check if you weren't sure?
-  some do and some dont, some change the origional strings, and some create modified copys in the return
+  no strings are immutable (cannot be changed), some change the origional strings, and some create modified copys in the return
 - Roughly how many string methods are there according to the MDN Web docs?
   ~ 50
 - Is the return value of a function or method useful in every situation?
