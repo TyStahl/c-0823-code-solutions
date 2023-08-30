@@ -20,6 +20,7 @@ console.log('random Hero: ', randomHero);
 const library = [
   { title: 'Harry Potter', author: 'JK Rowling' },
   { title: 'Slaughterhouse Five', author: 'Kurt Vonnegetu' },
+  { title: 'The Cat in the Hat', author: 'Dr. Suess' },
 ];
 const lastBook = library.pop();
 console.log('lastBook: ', lastBook);
@@ -38,7 +39,7 @@ const css = {
 
 library.push(js);
 library.unshift(css);
-library.splice(1, 1, js);
+library.splice(1, 1);
 
 console.log('updated library: ', library);
 
