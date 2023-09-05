@@ -2,13 +2,12 @@
 function capitalizeWords(string) {
   const lowerCasedString = string.toLowerCase();
   const splitStringArray = lowerCasedString.split(' ');
-  const newArray = [];
   let tempString = '';
   let upperTempString = '';
-  let finalString = '';
+  let newString = '';
 
   for (let a = 0; a < splitStringArray.length; a++) {
-    tempString = splitStringArray.pop([a]);
+    tempString = splitStringArray[a];
     for (let s = 0; s < tempString.length; s++) {
       if (s === 0) {
         upperTempString += tempString[s].toUpperCase();
@@ -16,10 +15,12 @@ function capitalizeWords(string) {
         upperTempString += tempString[s];
       }
     }
-    finalString += upperTempString;
-    newArray.push(finalString);
+    if (a !== splitStringArray.length - 1) {
+      upperTempString += ' ';
+    }
+    newString = upperTempString;
   }
-  return newArray;
+  return newString;
 }
 
 console.log('---capitalizeWords---');
