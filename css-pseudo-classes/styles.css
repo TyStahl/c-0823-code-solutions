@@ -14,10 +14,6 @@ thead {
   color: white;
 }
 
-.odd {
-  background-color: rgb(163, 162, 162);
-}
-
-.even {
-  background-color: rgb(240, 255, 255);
+.odd > tbody > tr:nth-child(odd) {
+  background-color: silver;
 }
