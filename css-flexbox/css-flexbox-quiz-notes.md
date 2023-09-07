@@ -5,12 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the default `flex-direction` of a `flex` container?
-
+  left to right
 - What is the default `flex-wrap` of a `flex` container?
-
+  no wrap
 - What axis do the `justify-content` properties work on?
-
+  x axis horizonal
 - What axis do the `align-items` properties work on?
+  y axis, vertical
 
 ## Notes
 
