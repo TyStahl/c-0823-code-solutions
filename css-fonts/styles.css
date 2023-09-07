@@ -1,0 +1,15 @@
+font-family: 'Pacifico', cursive;
+font-family: 'Rubik Iso', cursive;
+
+h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+h2 {
+  font-family: 'Rubik Iso', cursive;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+  line-height: 2.5;
+}
