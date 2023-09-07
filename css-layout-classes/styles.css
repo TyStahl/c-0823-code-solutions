@@ -1,0 +1,39 @@
+.character {
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.row {
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.column-quarter {
+  text-align: left;
+  flex-basis: calc(100% / 4);
+}
+
+.column-third {
+  text-align: left;
+  flex-basis: calc(100% / 3);
+}
+
+.column-two-third {
+  text-align: left;
+  flex-basis: calc((100% / 3) * 2);
+}
+
+.column-half {
+  text-align: left;
+  flex-basis: calc(100% / 2);
+}
+
+.column-full {
+  text-align: left;
+  flex-basis: 100%;
+}
