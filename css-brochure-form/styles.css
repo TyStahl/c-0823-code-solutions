@@ -1,0 +1,13 @@
+h1 {
+  color: rgb(236, 93, 87);
+}
+
+select {
+  background-color: rgb(243, 243, 243);
+  width: 300px;
+}
+
+.submit {
+  background-color: rgb(236, 93, 87);
+  color: white;
+}

@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.email {
+  box-sizing: border-box;
+  width: 300px;
+  background-color: aquamarine;
+}
+
+.name {
+  box-sizing: border-box;
+  width: 300px;
+  background-color: rgb(153, 255, 127);
+}
+
+.city {
+  box-sizing: border-box;
+  width: 300px;
+  background-color: rgb(197, 255, 127);
+}
+
+.hiring {
+  box-sizing: border-box;
+  width: 300px;
+  background-color: rgb(253, 255, 127);
+}
+
+.submit {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+input {
+  text-align: left;
+  width: 300px;
+  border-radius: 5px;
+}
