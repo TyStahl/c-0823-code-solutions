@@ -11,33 +11,35 @@
   </head>
   <body>
     <h1>Learn More</h1>
-    <form>
-      <div class="email">
-        <label for="email"> Company Email </label><br />
-        <input id="email" type="email" placeholder="sally@company.co" />
-      </div>
-      <div class="name">
-        <label for="name">Name</label><br />
-        <input id="name" type="text" placeholder="Sally Smith" />
-      </div>
-      <div class="city">
-        <label for="city">Where are you hiring?</label><br />
-        <input id="city" type="text" placeholder="City, Country" />
-      </div>
-      <div class="hiring">
-        <label for="hiring"
-          >How many engineers are you hiring in the next months?</label
-        ><br />
-        <select id="hiring">
-          <option value="One-or-two">One or two</option>
-          <option value="three-or-four">Three or four</option>
-          <option value="five-or-six">Five or six</option>
-          <option value="'seven-or-more">Seven or more</option>
-        </select>
-      </div>
-      <div>
-        <input class="submit" type="submit" />
-      </div>
-    </form>
+    <fieldset>
+      <form>
+        <div class="email">
+          <label for="email"> Company Email </label><br />
+          <input id="email" type="email" placeholder="sally@company.co" />
+        </div>
+        <div class="name">
+          <label for="name">Name</label><br />
+          <input id="name" type="text" placeholder="Sally Smith" />
+        </div>
+        <div class="city">
+          <label for="city">Where are you hiring?</label><br />
+          <input id="city" type="text" placeholder="City, Country" />
+        </div>
+        <div class="hiring">
+          <label for="hiring"
+            >How many engineers are you hiring in the next months?</label
+          ><br />
+          <select id="hiring">
+            <option value="One-or-two">1-2 Engineers</option>
+            <option value="three-or-four">3-4 Engineers</option>
+            <option value="five-or-six">5-6 Engineers</option>
+            <option value="'seven-or-more">7 or more Engineers</option>
+          </select>
+        </div>
+        <div class="submit">
+          <input id="submit" type="submit" />
+        </div>
+      </form>
+    </fieldset>
   </body>
 </html>

@@ -1,13 +1,70 @@
+* {
+  font-family: 'Gill Sans', sans-serif;
+  box-sizing: border-box;
+}
+
 h1 {
+  text-align: center;
   color: rgb(236, 93, 87);
 }
 
-select {
-  background-color: rgb(243, 243, 243);
-  width: 300px;
+fieldset {
+  border: none;
 }
 
-.submit {
+.email {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 40%;
+}
+
+#email {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.name {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 40%;
+}
+
+#name {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.city {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 40%;
+}
+
+#city {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.hiring {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 40%;
+}
+
+#hiring {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#submit {
+  margin-top: 20px;
+  margin-left: 60%;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
   background-color: rgb(236, 93, 87);
   color: white;
 }
