@@ -7,8 +7,7 @@
 }
 
 .button-row {
-  display: flex;
-  justify-content: flex-end;
+  flex-basis: 100%;
 }
 
 .column-half {
