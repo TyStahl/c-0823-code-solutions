@@ -1,3 +1,18 @@
+* {
+  margin: 1rem;
+  font-family: Karla, sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+.p-centered {
+  text-align: center;
+  justify-content: space-around;
+  margin: 0 15rem;
+}
+
 .all-caps {
   text-transform: uppercase;
 }
@@ -10,13 +25,28 @@
   flex-basis: 100%;
 }
 
-.column-half {
+button {
+  justify-content: flex-end;
+}
+
+.column1-2 {
   display: flex;
-  flex-basis: 50%;
+  flex-basis: calc(100% / 2);
+  justify-content: flex-start;
+}
+
+.column1-3 {
+  flex-basis: calc(100% / 3);
+}
+
+.column2-3 {
+  flex-basis: calc((100% / 3) * 2);
 }
 
 .column-full {
+  display: flex;
   flex-basis: 100%;
+  justify-content: center;
 }
 
 .salmon {
