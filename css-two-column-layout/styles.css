@@ -6,7 +6,13 @@
   display: flex;
 }
 
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .column-half {
+  display: flex;
   flex-basis: 50%;
 }
 
