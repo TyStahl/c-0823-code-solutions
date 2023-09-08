@@ -1,0 +1,19 @@
+.all-caps {
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.salmon {
+  color: rgb(209, 76, 69);
+}
