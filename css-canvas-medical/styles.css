@@ -1,0 +1,27 @@
+.row {
+  display: flex;
+  flex-wrap: warp;
+  flex-basis: 100%;
+}
+
+.column1-2 {
+  flex-basis: calc(100% / 2);
+  display: flex;
+  justify-content: space-around;
+}
+
+.column3-4 {
+  flex-basis: calc((100% / 4) * 3);
+}
+
+.column1-5 {
+  flex-basis: calc(100% / 5);
+}
+
+.button {
+  border: none;
+}
+
+.footer {
+  background-color: blueviolet;
+}
