@@ -29,6 +29,16 @@
   flex-direction: row;
 }
 
+.pr-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pr-sub-row {
+  flex-direction: row;
+}
+
 .column1-3 {
   flex-basis: calc(100% / 3);
 }
@@ -74,4 +84,16 @@
 .graphic-row > button {
   height: 2.5rem;
   width: auto;
+}
+
+.grey-text {
+  color: rgb(110, 110, 110);
+}
+
+.white-text {
+  color: white;
+}
+
+.graphic-row > p {
+  line-height: 1.75rem;
 }
