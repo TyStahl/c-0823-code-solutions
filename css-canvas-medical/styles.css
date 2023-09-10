@@ -97,3 +97,15 @@
 .graphic-row > p {
   line-height: 1.75rem;
 }
+
+.loc-row {
+  display: flex;
+  margin: 2rem auto;
+}
+
+.loc-column1-2 {
+  flex-basis: calc(100% / 2);
+  flex-direction: column;
+  margin-left: 2rem auto;
+  justify-content: center;
+}
