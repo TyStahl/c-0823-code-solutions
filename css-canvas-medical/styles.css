@@ -1,3 +1,11 @@
+* {
+  font-family: 'Tiempos Headline', serif;
+}
+
+.avenir {
+  font-family: Avenir, sans-serif;
+}
+
 .container {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -16,6 +24,7 @@
   flex-basis: 100%;
   aspect-ratio: 16/9;
   background-image: url('./images/hero.jpg');
+  background-repeat: no-repeat;
 }
 
 .column1-2 {
@@ -161,26 +170,32 @@
   display: flex;
 }
 
-.mn-column1-2 {
+.mn-column {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 5rem;
-  flex-basis: calc(100% / 2);
+  flex-basis: 100%;
+  margin: 3rem;
 }
 
-.mn-column1-4 {
-  flex-basis: calc(100% / 4);
+.mn-column1-2 {
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: calc(100% / 2);
 }
 
 .grey-bg {
   background-color: rgb(82, 83, 81);
 }
 
+.mn-column1-4 {
+  flex-direction: column;
+  flex-basis: calc(100% / 4);
+}
+
 .mn-sub-row > img {
   height: 1.5rem;
   width: auto;
   margin-top: 2rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .priv-row {
@@ -199,5 +214,17 @@
 }
 
 .lh {
-  line-height: 0.5rem;
+  line-height: 1.8rem;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.r-text {
+  text-align: right;
+}
+
+.tiempos {
+  font-family: 'Tiempos Headline', serif;
 }
