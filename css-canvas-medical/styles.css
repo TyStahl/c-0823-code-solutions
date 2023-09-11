@@ -1,3 +1,8 @@
+.container {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
 .row {
   display: flex;
 }
@@ -9,7 +14,6 @@
 
 .column-full {
   display: flex;
-  margin: 4rem auto;
   flex-basis: 100%;
   aspect-ratio: 16/9;
   background-image: url('./images/hero.jpg');
@@ -39,11 +43,27 @@
   flex-direction: row;
 }
 
+.navcolumn2-3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.column1-5 {
+  flex-direction: row;
+}
+
+.column2-3 > h1 {
+  justify-content: center;
+  text-align: center;
+}
+
 .column1-3 {
   flex-basis: calc(100% / 3);
 }
 
 .column2-3 {
+  display: flex;
+  flex-direction: column;
   flex-basis: calc((100% / 3) * 2);
 }
 
@@ -78,7 +98,7 @@
 .column1-3 > img {
   height: 1.5rem;
   width: auto;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 .graphic-row > button {
@@ -108,4 +128,8 @@
   flex-direction: column;
   margin-left: 2rem auto;
   justify-content: center;
+}
+
+.c-text {
+  text-align: center;
 }
