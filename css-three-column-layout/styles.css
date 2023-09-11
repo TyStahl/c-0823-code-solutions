@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(25, 150, 218);
+}
+
+.image {
+  display: flex;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.image > img {
+  width: 50%;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-third {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.text {
+  text-align: center;
+  color: white;
+}
