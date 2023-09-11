@@ -9,7 +9,6 @@
 
 .nav-row {
   display: flex;
-  justify-content: flex-start;
 }
 
 .column-full {
@@ -92,7 +91,7 @@
 }
 
 .nav-margin {
-  margin: 20px;
+  margin: 2.5rem;
 }
 
 .column1-3 > img {
@@ -132,4 +131,27 @@
 
 .c-text {
   text-align: center;
+}
+
+.rdy-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.rdy-column3-4 {
+  flex-direction: column;
+  margin-left: 5rem;
+  flex-basis: calc((100% / 5) * 3);
+}
+
+.rdy-column1-4 {
+  display: flex;
+  flex-basis: calc(100% / 4);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rdy-column1-4 > button {
+  height: 2.5rem;
+  width: auto;
 }
