@@ -155,3 +155,49 @@
   height: 2.5rem;
   width: auto;
 }
+
+.mn-row {
+  flex-direction: row;
+  display: flex;
+}
+
+.mn-column1-2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5rem;
+  flex-basis: calc(100% / 2);
+}
+
+.mn-column1-4 {
+  flex-basis: calc(100% / 4);
+}
+
+.grey-bg {
+  background-color: rgb(82, 83, 81);
+}
+
+.mn-sub-row > img {
+  height: 1.5rem;
+  width: auto;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.priv-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.priv-column1-5 {
+  flex-direction: column;
+  flex-basis: calc(100% / 5);
+  margin-left: 6rem;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.lh {
+  line-height: 0.5rem;
+}
