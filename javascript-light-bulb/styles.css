@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.light {
+  height: 300px;
+  width: auto;
+  aspect-ratio: 1/1;
+  border-radius: 150rem;
+}
+
+.sunny {
+  background-color: rgb(250, 234, 132);
+  box-shadow: 0 0 40px 30px rgb(232, 223, 132);
+}
+
+.moony {
+  background-color: rgb(34, 35, 36);
+  box-shadow: 0 0 40px 30px rgb(0, 0, 0);
+}
+
+.day {
+  background-color: rgb(254, 249, 241);
+}
+
+.night {
+  background-color: rgb(17, 17, 17);
+}
