@@ -43,17 +43,27 @@
 .content {
   display: flex;
   flex-direction: column;
+}
+
+.screens {
+  display: flex;
   justify-content: center;
 }
 
-/* .screen{
-  width: 75%;
-} */
+.icons {
+  display: flex;
+  justify-content: center;
+}
 
-.content > img {
+.screens > img {
   width: 75%;
 }
 
 .icons > img {
   width: 20%;
+}
+
+.text {
+  font-family: Barlow, sans-serif;
+  text-align: center;
 }
