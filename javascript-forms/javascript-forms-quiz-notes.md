@@ -13,15 +13,16 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What event is fired when a user clicks the `"submit"` button within a `<form>`?
   submit event
 - What does the `event.preventDefault()` method do?
-  it stops
+  it stops the default action of the event from occuring
 - What does submitting a form without `event.preventDefault()` do?
+  stops the browser from regreshing when submitting
   stops the default action of an element from occuring. i.e. prevents a form from being submitted or a link following a url
 - What property of a form element object contains all of the form's controls.
   HTML form controls collection
 - What property of a form control object gets and sets its value?
-  input?
+  value property
 - What is one risk of writing a lot of code without checking to see if it works so far?
-  typos, wasted time
+  typos, wasted time, bugs
 - What is an advantage of having your console open when writing a JavaScript program?
   test your variables, returns, etc as they are used or before they are used or manipulated to make sure we are doing what we want to do
 
