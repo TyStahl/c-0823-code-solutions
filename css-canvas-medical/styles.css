@@ -23,8 +23,8 @@
   display: flex;
   flex-basis: 100%;
   aspect-ratio: 16/9;
-  background-image: url('./images/hero.jpg');
-  background-repeat: no-repeat;
+  background: no-repeat, linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('./images/hero.jpg');
 }
 
 .column1-2 {
