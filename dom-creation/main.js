@@ -67,36 +67,34 @@ const pokedex = [
 ];
 
 function renderPokemon(pokemon) {
-  const columnThird = document.createElement('div');
-  columnThird.className = 'column-third';
+  const $columnThird = document.createElement('div');
+  $columnThird.className = 'column-third';
 
-  const pokemonCard = document.createElement('div');
-  pokemonCard.className = 'pokemon-card';
-  columnThird.append(pokemonCard);
+  const $pokemonCard = document.createElement('div');
+  $pokemonCard.className = 'pokemon-card';
+  $columnThird.append($pokemonCard);
 
-  const imageTag = document.createElement('img');
-  imageTag.setAttribute('src', pokemon.imageUrl);
-  pokemonCard.append(imageTag);
+  const $imageTag = document.createElement('img');
+  $imageTag.setAttribute('src', pokemon.imageUrl);
+  $pokemonCard.append($imageTag);
 
-  const pokemonText = document.createElement('div');
-  pokemonText.className = 'pokemon-card-text';
-  pokemonCard.append(pokemonText);
+  const $pokemonText = document.createElement('div');
+  $pokemonText.className = 'pokemon-card-text';
+  $pokemonCard.append($pokemonText);
 
-  const heading2 = document.createElement('h2');
-  heading2.textContent = pokemon.name;
-  pokemonText.append(heading2);
+  const $heading2 = document.createElement('h2');
+  $heading2.textContent = pokemon.name;
+  $pokemonText.append($heading2);
 
-  const heading3 = document.createElement('h3');
-  heading3.textContent = pokemon.number;
-  pokemonText.append(heading3);
+  const $heading3 = document.createElement('h3');
+  $heading3.textContent = pokemon.number;
+  $pokemonText.append($heading3);
 
-  const pGraph = document.createElement('p');
-  pGraph.textContent = pokemon.description;
-  pokemonText.append(pGraph);
-  return columnThird;
+  const $pGraph = document.createElement('p');
+  $pGraph.textContent = pokemon.description;
+  $pokemonText.append($pGraph);
+  return $columnThird;
 }
-
-console.log(renderPokemon(pokedex[0]));
 
 const $row = document.querySelector('.row');
 
@@ -107,4 +105,4 @@ function pokemonAppend(pokedex) {
   }
 }
 
-console.log(pokemonAppend(pokedex));
+pokemonAppend(pokedex);
