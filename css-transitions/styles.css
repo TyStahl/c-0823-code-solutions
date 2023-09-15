@@ -22,7 +22,11 @@ section {
   font-size: 1rem;
   color: white;
   background-color: blue;
-  transition-delay: 250ms;
+  transition: background-color 0.5s ease 0.5s;
+}
+
+.custom-button:hover {
+  background-color: rgb(253, 2, 2);
 }
 
 .card-wrapper {
@@ -37,13 +41,13 @@ section {
   border-radius: 0.25rem;
   background-color: white;
   cursor: pointer;
-  transform: scale(1);
+  transition: transform 0.5s ease 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card > img {
   width: 100%;
-}
-
-.custom-button:focus {
-  background-color: rgb(253, 2, 2);
 }
