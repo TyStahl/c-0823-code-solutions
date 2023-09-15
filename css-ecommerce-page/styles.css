@@ -1,0 +1,25 @@
+.container {
+  width: 992px;
+  max-height: 100vh;
+  margin: auto;
+}
+
+.title-row {
+  display: flex;
+  justify-content: center;
+}
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.content-col {
+  flex-basis: 18%;
+}
+
+.content-col > img {
+  width: 100%;
+}
