@@ -1,0 +1,16 @@
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrong {
+  color: red;
+}
+
+.right {
+  color: green;
+  text-decoration: underline;
+}
