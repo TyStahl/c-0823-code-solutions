@@ -1,0 +1,45 @@
+.container {
+  height: 100vh;
+  margin: 10rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  border: 5px solid grey;
+  height: auto;
+}
+
+.column8-10 {
+  width: 80%;
+}
+
+.column-8-10 > img {
+  width: 100%;
+}
+
+.column-1-10 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+}
+
+button {
+  height: 33%;
+  width: 100%;
+  border: none;
+}
+
+.column-10-10 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
