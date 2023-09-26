@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What does the `new` operator do?
-  creates a new instance of a prototype data type
+  creates a new instance of an object
 - What property of JavaScript functions can store shared behavior for instances created with `new`?
   prototype
 - What does the `instanceof` operator do?
