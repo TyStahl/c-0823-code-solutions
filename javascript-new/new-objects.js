@@ -1,5 +1,3 @@
-function Object() {}
-
 const anObject = new Object();
 console.log('value of anObject: ', anObject);
 console.log('typeof anObject: ', typeof anObject);
