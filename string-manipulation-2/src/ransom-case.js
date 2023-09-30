@@ -11,10 +11,3 @@ function ransomCase(string) {
   }
   return finalWord;
 }
-
-console.log('---ransomCase---');
-console.log('foo  ->', '= "fOo"', ransomCase('foo'));
-console.log('QUUX ->', '= "qUuX"', ransomCase('QUUX'));
-console.log('WaldO ->', '= "wAlDo"', ransomCase('WaldO'));
-console.log('JavaScript ->', ' ="jAvAsCrIpT"', ransomCase('JavaScript'));
-console.log('LearningFuze ->', ' ="lEaRnInGfUzE"', ransomCase('LearningFuze'));

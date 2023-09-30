@@ -22,15 +22,3 @@ function capitalizeWords(string) {
   }
   return newString;
 }
-
-console.log('---capitalizeWords---');
-console.log('needs solution.-->', capitalizeWords('needs solution'));
-console.log(
-  'Add string manipulation practice.-->',
-  capitalizeWords('Add string manipulation practice.')
-);
-console.log('all code all day-->', capitalizeWords('aLl CoDe aLl DaY'));
-console.log(
-  'html, css, javascript, php, sql-->',
-  capitalizeWords('HTML, CSS, JavaScript, PHP, SQL')
-);

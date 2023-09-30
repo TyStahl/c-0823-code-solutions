@@ -23,10 +23,3 @@ function numVowels(string) {
   }
   return finalString.length;
 }
-
-console.log(numVowels('All Code All Day'));
-console.log(numVowels('HTML, CSS, JavaScript, React'));
-console.log(numVowels('React'));
-console.log(numVowels('Angular'));
-console.log(numVowels(''));
-console.log(numVowels('LearningFuze'));

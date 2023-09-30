@@ -24,12 +24,3 @@ function capitalizeWord(word) {
   }
   return finalWord;
 }
-
-console.log(' -- CapitalizeWord --');
-console.log(capitalizeWord('broKeN'));
-console.log(capitalizeWord('sEarCHinG'));
-console.log(capitalizeWord('quEStiOn'));
-console.log(capitalizeWord('tHoUghTfUl'));
-console.log(capitalizeWord('jaVAsCrIPt'));
-console.log(capitalizeWord('javaScript'));
-console.log(capitalizeWord('JavascRipt'));
