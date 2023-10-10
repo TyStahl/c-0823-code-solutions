@@ -11,11 +11,8 @@ console.log(
   })
 );
 
-console.log('formatted prices');
-
-console.log(
-  prices.map((currentValue, index, array) => {
-    array[index] = `$${currentValue.toFixed(2)}`;
-    return array;
-  })
+const formatPrices = prices.map(
+  (currentValue) => `$${currentValue.toFixed(2)}`
 );
+
+console.log('formatted prices', formatPrices);
