@@ -13,7 +13,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the `?:` (ternary) operator? How does it differ from `if/else`?
   it is shorthand
 - What is the `?.` (optional chaining) operator? When would you use it?
-
+  returns undefined instead of an error if property or functions are undefined; when the possibility exists that a reference may be missing.
 - What is `...` (spread) syntax? How do you use it with arrays and objects?
   spread syntax lets copy an object or array and add too it in a copy
 - What data types can be spread into an array? Into an object?
