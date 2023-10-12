@@ -5,8 +5,10 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is JSX?
-
+  HTMl-in-JavaScript syntax used by react
 - How does React use JSX to render components?
+  by converting jsx code into javascript
+  jsx elements are used to make dom calls that create, modifty , and delete dom elements
 
 ## Notes
 
