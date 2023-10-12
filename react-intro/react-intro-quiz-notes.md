@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is a React component?
   isolated pieces of UI that have their own functionality that can be re-used
 - How do you mount a React app (root component) to the DOM?
-  npm run dev
+  calling an app function, react creates the virtural dom and mounts it to the root div or element
 - What are some other popular frontend frameworks?
   angular, bootstrap, ruby, django, jquery
 
