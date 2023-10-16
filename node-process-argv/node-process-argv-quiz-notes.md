@@ -7,6 +7,8 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the `process` object in a Node.js program?
   the process object is an instance of EventEmitter
 
+  the process object is a global object that be accessed inside any modul without requiring it that provides various information sets about the runtime of a program
+
 - How do you access the `process` object in a Node.js program?
   you can explicitly access the process object with require
   `const process = require('process');`
