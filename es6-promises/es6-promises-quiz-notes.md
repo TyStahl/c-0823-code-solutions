@@ -5,12 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the Event Queue model of Promises?
-
+  the event queue model is execute stack -> push task que item -> empty stack -> push task que item..
 - What are the three states a Promise can be in?
-
+  resolved, pending, rejected
 - How do you handle the fulfillment of a Promise?
-
+  .then
 - How do you handle the rejection of a Promise?
+  .catch
 
 ## Notes
 
