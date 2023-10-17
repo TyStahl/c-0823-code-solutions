@@ -1,9 +1,8 @@
-import add from './add.js';
-import subtract from './subtract.js';
-import multiply from './multiply.js';
-import divide from './divide.js';
+import { add } from './add.js';
+import { subtract } from './subtract.js';
+import { multiply } from './multiply.js';
+import { divide } from './divide.js';
 
-// function calculate(num1, string, num2) {
 let result = '';
 const num1 = Number(process.argv[2]);
 const num2 = Number(process.argv[4]);
