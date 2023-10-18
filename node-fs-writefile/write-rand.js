@@ -1,12 +1,8 @@
 import { writeFile } from 'node:fs/promises';
 
-async function randomNumFile() {
-  const data = Math.random().toString() + '/n';
-  await writeFile('random.txt', data, 'utf-8');
-}
-
 try {
-  await randomNumFile();
+  await writeFile('random.txt', Math.random() + '/n', 'utf8');
 } catch (e) {
-  console.log(e);
+  console.error(e);
+  process.exit(1);
 }
