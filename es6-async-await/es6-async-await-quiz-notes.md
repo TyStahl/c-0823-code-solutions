@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the `async` and `await` keywords used for?
-
+  when we are using promises
 - How do `async` and `await` differ from `Promise.then` and `Promise.catch`?
 
 - When do you use `async`?
