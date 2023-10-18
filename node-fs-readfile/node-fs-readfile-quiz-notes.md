@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is a directory?
   a directory is a file location where files can be grouped and stored
 - What is a relative file path?
-  a relative file path is the path to a file shortened to only include children directories when you are referencing an absolute file path using ./ for the same directory, ../ for moving up to a parent directory
+  a relative file path is the path to a file shortened to only include children directories when you are referencing an absolute file path to the current working directory
 - What is an absolute file path?
   an absolute file path is the full path to a file starting from the file systems root
 - What module does Node.js include for manipulating the file system?
