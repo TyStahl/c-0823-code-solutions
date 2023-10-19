@@ -5,10 +5,11 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is TypeScript?
-
+  TypeScript is a superset of Javascript, it complites to Javascript and allows for typing
 - Why is TypeScript popular?
-
+  because it makes it easier to write good code, it's fully compatible with Javascript so its easy to replace javascript with type script, and because of Javascripts popularity.
 - What is a convenient way to run an Express server written in TypeScript?
+  ts-node-esm server.ts
 
 ## Notes
 

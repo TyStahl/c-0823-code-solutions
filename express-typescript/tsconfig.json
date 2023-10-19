@@ -1,4 +1,10 @@
 {
+  "nodemonConfig": {
+    "execMap": {
+      "ts": "ts-node-esm",
+      "js": "ts-node-esm"
+    }
+  },
   "ts-node": {
     "transpileOnly": true
   },
