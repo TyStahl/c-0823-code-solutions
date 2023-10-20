@@ -5,6 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the significance of an HTTP request's method?
+  it tells express how it expects to handle the request coming in
 
 ## Notes
 
