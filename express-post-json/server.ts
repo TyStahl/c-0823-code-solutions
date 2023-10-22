@@ -26,6 +26,10 @@ app.get('/api/grades', (req, res) => {
 app.post('/api/grades', (req, res) => {
   console.log(req.body);
   const { name, course, score } = req.body;
+  if (!name || !course || score === undefined) {
+    res.status(400).send();
+    return;
+  }
   const ob: Grade = {
     id: nextId,
     name,
