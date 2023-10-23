@@ -1,5 +1,4 @@
 import { readFile, writeFile } from 'node:fs/promises';
-// import { readNotes } from './read-notes';
 
 const operator = process.argv[2];
 
@@ -7,8 +6,6 @@ const JSONdata = await readFile('data.json', 'utf8');
 const dataModel = JSON.parse(JSONdata);
 
 async function readNotes() {
-  // const JSONdata = await readFile('data.json', 'utf8');
-  // const dataModel = JSON.parse(JSONdata);
   for (const key in dataModel.notes) {
     console.log(`${key} : ${dataModel.notes[key]}`);
   }
@@ -18,6 +15,8 @@ async function writeNew() {
   const noteContent = process.argv.slice(3).join(' ');
   await writeFile('newest-note.txt', noteContent, 'utf8');
   const newestNote = await readFile('newest-note.txt', 'utf8');
+
+  /* This is unusual. You write the file and then read it right back in again? Why not just use noteContent below? */
   dataModel.notes[dataModel.nextId.toString()] = newestNote;
   dataModel.nextId++;
   const newJSONdata = await JSON.stringify(dataModel, null, 2);
@@ -36,7 +35,6 @@ async function updateNote() {
 
 async function deleteNote() {
   const noteId = process.argv[3].toString();
-  // const updatedNote = process.argv.slice(4).join(' ');
   for (const key in dataModel.notes) {
     if (key === noteId) {
       delete dataModel.notes[key];
