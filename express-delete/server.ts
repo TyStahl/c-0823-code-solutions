@@ -42,10 +42,11 @@ app.get('/api/grades', (req, res) => {
 app.delete('/api/grades/:id', (req, res) => {
   const id = req.params.id;
   if (!grades[id]) {
-    res.sendStatus(404);
+    res.status(404).send();
+    return;
   }
   delete grades[id];
-  res.sendStatus(204);
+  res.status(204).send();
 });
 
 app.listen(8080, () => console.log('app is listening on port 8080'));
