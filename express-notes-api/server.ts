@@ -62,8 +62,6 @@ app.post('/api/notes', async (req, res) => {
       content,
     };
     journal.notes[journal.nextId++] = newEntry;
-    // const newNotes = await JSON.stringify(journal, null, 2);
-    // journal = await writeFile('data.json', newNotes, 'utf8');
     journal = await writeData(journal);
     res.status(201).json(newEntry);
   } catch (error) {
