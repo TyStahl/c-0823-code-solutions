@@ -3,7 +3,7 @@
 ## Notes
 
 All student notes should be written here.
-
+question, how would we test post undefined in this context, emptry string is null
 How to write `Code Examples` in markdown
 
 for JS:
