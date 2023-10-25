@@ -5,8 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are some examples of aggregate functions?
-
+  sum, count, avg
 - What is the purpose of a `group by` clause?
+  seperates rows into groups to perform the aggregate functions on them
+
+group by requires an aggragate.
+
+aggragate without a group will perform the funx on whole columnn
 
 ## Notes
 
