@@ -5,14 +5,16 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is a foreign key?
-
+  a foriegn key references the primary key in another table
 - How do you join two SQL tables? (Provide at least two syntaxes.)
-
+  join clause "table" using
+  join clause "table" on if column names are not identical
 - How do you temporarily rename columns or tables in a SQL statement?
-
+  as clause / as "temporary name"
 - How do you create a one-to-many relationship between two tables?
-
+  use a foreign key to reference primary key of another table
 - How do you create a many-to-many relationship between two tables?
+  with an extra table that have multiple Id referencing the other two tables
 
 ## Notes
 
