@@ -1,3 +1,3 @@
-select count("inventory") as "totalDVDs"
+select count(*) as "totalDVDs"
 
 from "inventory"
