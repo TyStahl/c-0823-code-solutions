@@ -13,7 +13,8 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the naming convention for event handlers?
   handleXxx
 - What is an "event handler prop"? Which component declares the prop?
-  call back function
+  call back function,
+  "Event handlers are defined inside a component, so they can access props. You can declare an event handler in a parent and pass it as a prop to a child. You can define your own event handler props with application-specific names."
 - What are some custom event handler props a component may wish to define?
   go back go forward, play music, etc
 - What is the naming convention for custom event handler props?
