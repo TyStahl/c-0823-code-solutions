@@ -14,7 +14,6 @@ const db = new pg.Pool({
 
 const app = express();
 app.use(express.json());
-app.listen(8080, () => console.log('app is listenting on port 8080'));
 
 app.get('/api/grades', async (req, res, next) => {
   try {
@@ -23,8 +22,8 @@ app.get('/api/grades', async (req, res, next) => {
         from "grades"
     `;
     const result = await db.query(sql);
-    const grade = result.rows;
-    res.status(200).json(grade);
+    const grades = result.rows;
+    res.status(200).json(grades);
   } catch (err) {
     next(err);
   }
@@ -121,10 +120,11 @@ app.delete('/api/grades/:gradeId', async (req, res, next) => {
     if (!grade) {
       throw new ClientError(404, `Cannot find grade with "gradeId" ${gradeId}`);
     }
-    res.status(204).json(grade);
+    res.sendStatus(204);
   } catch (err) {
     next(err);
   }
 });
 
 app.use(errorMiddleware);
+app.listen(8080, () => console.log('app is listenting on port 8080'));
