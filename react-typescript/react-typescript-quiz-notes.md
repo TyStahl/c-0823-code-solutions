@@ -5,10 +5,12 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is TypeScript?
-
+  Typescript is a superset of JavaScript which includes types and type checking, it compiles to JavaScript, so it is essentially JavaScript with Types.
 - Why is TypeScript popular?
-
+  TypeScript is popular because it makes it easier write bug free code, to scale projects, and for projects to be worked on by teams.
 - What is an easy way to create a React app that uses TypeScript?
+  npm create vite@latest app-name -- --template react-ts
+  with npm, vite, and the template react-ts
 
 ## Notes
 
