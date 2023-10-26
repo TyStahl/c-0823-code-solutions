@@ -3,19 +3,18 @@ import './App.css';
 import ToggleButton from './ToggleButton';
 import './ToggleButton.css';
 
-// function handleClick() {
-//   const [isClicked, setIsClicked] = useState(false);
-//   setIsClicked(true);
-// }
-
 function App() {
-  // const [count, setCount] = useState(0)
-
+  // const [isClicked, setIsClicked] = useState(false);
+  // function handleClick() {
+  //   console.log(isClicked);
+  //   setIsClicked(true);
+  //   console.log(isClicked);
+  // }
   return (
     <>
-      <ToggleButton color="text" text="${buttonText}" />
-      <ToggleButton color="red" text="unclicked" />
-      <ToggleButton color="white" text="clicked" />
+      {/* <ToggleButton color="green" {isClicked = {text="true"} && {text="false"}} /> */}
+      <ToggleButton color="red" text="false" />
+      <ToggleButton color="blue" text="false" />
     </>
   );
 }

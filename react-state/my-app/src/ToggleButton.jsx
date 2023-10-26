@@ -1,33 +1,27 @@
 import { useState } from 'react';
+import './ToggleButton.css';
 
 function ToggleButton({ text, color }) {
   const [isClicked, setIsClicked] = useState(false);
-  const [buttonColor, setbuttonColor] = useState('red');
-  const [buttonText, setbuttonText] = useState('unclicked');
 
   function handleClick() {
-    setIsClicked(!isClicked);
-    if (isClicked) {
-      setbuttonColor(color);
-      setbuttonText(text);
-    } else {
-      setbuttonColor(color);
-      setbuttonText(text);
-    }
+    console.log(isClicked);
+    setIsClicked(true);
     console.log(isClicked);
   }
 
   {
-    if (isClicked) {
+    if (isClicked === true) {
       return (
-        <button onClick={() => handleClick()} className={`${buttonColor}`}>
-          {buttonText}
+        <button className={color} onClick={() => handleClick()}>
+          {text}
         </button>
       );
-    } else {
+    }
+    if (isClicked === false) {
       return (
-        <button onClick={() => handleClick()} className={`${buttonColor}`}>
-          {buttonText}
+        <button className={color} onClick={() => handleClick()}>
+          {text}
         </button>
       );
     }
