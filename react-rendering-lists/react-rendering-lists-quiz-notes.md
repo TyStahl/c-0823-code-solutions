@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - When would we want to dynamically create a list of React components?
   when the data is coming from a database or will have li's added or removed
 - Why is it important for React components to be data-driven?
-  so that they can be easily scaled
+  so that they can be easily scaled to match each user
 - Where in the component code would a list of React components typically be built?
   in a components folder?
 - What `Array` method is commonly used to create a list of React components?
