@@ -15,10 +15,10 @@ type HotProps = {
   text: string;
 };
 function HotButton({ text }: HotProps) {
-  const [count, setCount] = useState(3);
-  const hotCount = Math.floor(count / 3);
+  const [value, setvalue] = useState(3);
+  const hotvalue = Math.floor(value / 3);
   let color = 'blue';
-  switch (hotCount) {
+  switch (hotvalue) {
     case 1:
       color = 'blue';
       break;
@@ -41,16 +41,16 @@ function HotButton({ text }: HotProps) {
   return (
     <button
       className={color}
-      onClick={() => setCount(count >= 18 ? 3 : count + 1)}>
+      onClick={() => setvalue(value >= 18 ? 3 : value + 1)}>
       {text}
     </button>
   );
 }
 
-type InstuctionsProp = {
+type InstructionProps = {
   text: string;
 };
-function Instuctions({ text }: InstuctionsProp) {
+function Instuctions({ text }: InstructionProps) {
   return <p>{text}</p>;
 }
 
