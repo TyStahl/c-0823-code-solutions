@@ -1,0 +1,19 @@
+.on {
+  display: flex;
+  border: solid 2px black;
+  justify-content: flex-start;
+  width: 6rem;
+  height: 5rem;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.off {
+  display: flex;
+  border: solid 2px black;
+  justify-content: flex-end;
+  width: 6rem;
+  height: 5rem;
+  background-color: red;
+  border-radius: 10px;
+}
