@@ -12,9 +12,9 @@ function App() {
   // }
   return (
     <>
-      {/* <ToggleButton color="green" {isClicked = {text="true"} && {text="false"}} /> */}
-      <ToggleButton color="red" text="false" />
-      <ToggleButton color="blue" text="false" />
+      <ToggleButton color="green" text="button1" />
+      <ToggleButton color="red" text="button2" />
+      <ToggleButton color="blue" text="button3" />
     </>
   );
 }

@@ -6,25 +6,13 @@ function ToggleButton({ text, color }) {
 
   function handleClick() {
     console.log(isClicked);
-    setIsClicked(true);
+    setIsClicked(!isClicked);
     console.log(isClicked);
   }
-
-  {
-    if (isClicked === true) {
-      return (
-        <button className={color} onClick={() => handleClick()}>
-          {text}
-        </button>
-      );
-    }
-    if (isClicked === false) {
-      return (
-        <button className={color} onClick={() => handleClick()}>
-          {text}
-        </button>
-      );
-    }
-  }
+  return (
+    <button className={isClicked ? color : ''} onClick={() => handleClick()}>
+      {text}
+    </button>
+  );
 }
 export default ToggleButton;
