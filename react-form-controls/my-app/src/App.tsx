@@ -1,5 +1,5 @@
 import './App.css';
-import { RegistrationFormUncontrolled } from './RegistrationFormUnControlled';
+import { RegistrationFormUncontrolled } from './RegistrationFormUncontrolled';
 
 function App() {
   return (
