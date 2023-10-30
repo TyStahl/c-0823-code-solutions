@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 
 export function RegistrationFormControlled() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  function handleSubmit(e) {
+  function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    console.log('username', username);
-    console.log('password', password);
+    console.log('username: ', username);
+    console.log('password: ', password);
   }
   return (
     <>
@@ -15,19 +15,13 @@ export function RegistrationFormControlled() {
         <label>
           Username:
           <input
-            onChange={(e) => {
-              e.preventDefault();
-              setUsername(e.target.value);
-            }}
+            onChange={(e) => setUsername(e.target.value)}
             name="username"></input>
         </label>
         <label>
           Password:
           <input
-            onChange={(e) => {
-              e.preventDefault();
-              setPassword(e.target.value);
-            }}
+            onChange={(e) => setPassword(e.target.value)}
             name="password"></input>
         </label>
         <button>Submit</button>

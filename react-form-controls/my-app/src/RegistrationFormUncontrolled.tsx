@@ -1,7 +1,9 @@
+import { FormEvent } from 'react';
+
 export function RegistrationFormUncontrolled() {
-  function handleSubmit(e) {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const form = e.target;
+    const form = e.currentTarget;
     const formData = new FormData(form);
     const formObject = Object.fromEntries(formData);
 
