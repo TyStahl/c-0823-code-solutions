@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c1-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 12%;
+  border: 2px solid white;
+  height: 100px;
+}
+
+.next {
+  width: 10%;
+  height: 2rem;
+  margin: 2rem;
+}
+
+.prev {
+  width: 10%;
+  height: 2rem;
+  margin: 2rem;
+}
