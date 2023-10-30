@@ -1,11 +1,11 @@
-// import './App.css';
-// import { ValidatedInput } from './ValidatedInput';
-// function App() {
-//   return (
-//     <>
-//       <ValidatedInput />
-//     </>
-//   );
-// }
+import './App.css';
+import { ValidatedInput } from './ValidatedInput';
+function App() {
+  return (
+    <>
+      <ValidatedInput />
+    </>
+  );
+}
 
-// export default App;
+export default App;

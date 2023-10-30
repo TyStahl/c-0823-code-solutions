@@ -1,64 +1,64 @@
-// import { FaCheck, FaWordpress } from 'react-icons/fa';
-// import { FaTimes } from 'react-icons/fa';
+import { FormEvent, useState } from 'react';
+import { FaCheck } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
+import './ValidatedInput.css';
 
-// export function ValidatedInput(e) {
-//   const [password, setPassword] = useState('');
-//   function validatePassword() {
-//     setPassword(e.target.value);
-//     password.toLowercase();
-//     if (
-//       password.includes(
-//         'a' ||
-//           'b' ||
-//           'c' ||
-//           'd' ||
-//           'e' ||
-//           'f' ||
-//           'g' ||
-//           'h' ||
-//           'i' ||
-//           'j' ||
-//           'k' ||
-//           'l' ||
-//           'm' ||
-//           'n' ||
-//           'o' ||
-//           'p' ||
-//           'q' ||
-//           'r' ||
-//           's' ||
-//           't' ||
-//           'u' ||
-//           'v' ||
-//           'w' ||
-//           'x' ||
-//           'y' ||
-//           'z'
-//       ) &&
-//       password.includes(0 || 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9)
-//     ) {
-//     }
-//   }
+export function ValidatedInput() {
+  const [password, setPassword] = useState('');
+  let psIsValid = false;
+  validatePassword();
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+  }
 
-//   return (
-//     <>
-//       <form>
-//         <label>
-//           Username:
-//           <input></input>
-//         </label>
-//         <label>
-//           Password:
-//           <input onChange={validatePassword}></input>
-//         </label>
-//         <button type="submit">Submit</button>
-//         <span>
-//           <FaCheck />
-//         </span>
-//         <span>
-//           <FaTimes />
-//         </span>
-//       </form>
-//     </>
-//   );
-// }
+  function validatePassword() {
+    if (password.length >= 8) {
+      psIsValid = true;
+    } else {
+      psIsValid = false;
+    }
+  }
+
+  function ValidOrNot() {
+    if (!password) {
+      return (
+        <span className="is-invalid">
+          <FaTimes />
+          <p>A password is required </p>
+        </span>
+      );
+    }
+    if (psIsValid) {
+      return (
+        <span className="is-valid">
+          <FaCheck />
+        </span>
+      );
+    } else {
+      return (
+        <span className="is-invalid">
+          <FaTimes />
+          <p>Password must be at least 8 characters</p>
+        </span>
+      );
+    }
+  }
+
+  return (
+    <>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Password:
+          <input
+            placeholder="enter password"
+            value={password ?? ''}
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}></input>
+        </label>
+        <button type="submit">Submit</button>
+        <ValidOrNot />
+      </form>
+    </>
+  );
+}
