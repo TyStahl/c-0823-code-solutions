@@ -1,7 +1,5 @@
 export function RegistrationFormUncontrolled() {
-  console.log('open');
   function handleSubmit(e) {
-    console.log('running');
     e.preventDefault();
     const form = e.target;
     const formData = new FormData(form);
