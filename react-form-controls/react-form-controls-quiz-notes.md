@@ -5,8 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - How do controlled components differ from uncontrolled components?
-  controlled components refer to components where a parent element control's their state and rely on values being pass down as props,
-  uncontrolled componenents refer to componenets that manage their own state and down rely on parents to pass down values as props
+
 - What are some advantages of using uncontrolled components?
 
 - What are some advantages of using controlled components?
