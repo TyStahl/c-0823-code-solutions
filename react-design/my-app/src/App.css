@@ -22,13 +22,7 @@
   height: 100px;
 }
 
-.next {
-  width: 10%;
-  height: 2rem;
-  margin: 2rem;
-}
-
-.prev {
+.button {
   width: 10%;
   height: 2rem;
   margin: 2rem;
