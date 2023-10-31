@@ -22,6 +22,7 @@ function App() {
       setIndex(5);
     }
   }
+
   const items = [
     'Aardvark',
     'Bengal',
@@ -33,10 +34,40 @@ function App() {
 
   return (
     <>
-      <p>{index}</p>
       <BannerDisplay items={items} index={index} />
       <NextPrevButton text="NEXT" onClick={handleNextIndex} />
-      <BannerSelections index={index} />
+      <div className="row">
+        <BannerSelections
+          index={index}
+          num={0}
+          onCustomClick={() => setIndex(0)}
+        />
+        <BannerSelections
+          index={index}
+          num={1}
+          onCustomClick={() => setIndex(1)}
+        />
+        <BannerSelections
+          index={index}
+          num={2}
+          onCustomClick={() => setIndex(2)}
+        />
+        <BannerSelections
+          index={index}
+          num={3}
+          onCustomClick={() => setIndex(3)}
+        />
+        <BannerSelections
+          index={index}
+          num={4}
+          onCustomClick={() => setIndex(4)}
+        />
+        <BannerSelections
+          index={index}
+          num={5}
+          onCustomClick={() => setIndex(5)}
+        />
+      </div>
       <NextPrevButton text="PREV" onClick={handlePrevIndex} />
     </>
   );

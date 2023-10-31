@@ -22,6 +22,11 @@
   height: 100px;
 }
 
+.w {
+  background-color: lightblue;
+  color: black;
+}
+
 .button {
   width: 10%;
   height: 2rem;
