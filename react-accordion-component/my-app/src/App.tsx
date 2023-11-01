@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import './App.css';
 
-const topics = [
+type Topics = {
+  language: string;
+  description: string;
+};
+
+type TopicsArray = Topics[];
+
+const topics: TopicsArray = [
   {
     language: 'HTML',
     description:
@@ -19,11 +27,23 @@ const topics = [
 ];
 
 function Accordion() {
+  const [activePanel, setActivePanel] = useState<string>('');
+
+  function handleActivePanel(string: string): void {
+    if (activePanel === string) {
+      setActivePanel('');
+    } else {
+      setActivePanel(string);
+    }
+  }
+
   return (
     <>
-      <Panel title={topics[0].language} description={topics[0].description} />
-      <Panel title={topics[1].language} description={topics[1].description} />
-      <Panel title={topics[2].language} description={topics[2].description} />
+      <Panels
+        topics={topics}
+        activePanel={activePanel}
+        handleActivePanel={handleActivePanel}
+      />
     </>
   );
 }
@@ -31,15 +51,25 @@ function Accordion() {
 export default Accordion;
 
 type PanelProps = {
-  title: string;
-  description: string;
+  topics: TopicsArray;
+  activePanel: string;
+  handleActivePanel: (string: string) => void;
 };
 
-function Panel({ title, description }: PanelProps) {
-  return (
-    <div className="box">
-      <h3>{title}</h3>
-      <p>{description}</p>
+function Panels({ handleActivePanel, activePanel, topics }: PanelProps) {
+  const topicList = topics.map((item, index) => (
+    <div>
+      <div
+        onClick={() => handleActivePanel(item.language)}
+        className="titlebox">
+        <h3 key={item.language + index}>{item.language}</h3>
+      </div>
+      {activePanel.toLowerCase() === item.language.toLowerCase() && (
+        <div className="bodybox">
+          <p>{item.description}</p>
+        </div>
+      )}
     </div>
-  );
+  ));
+  return <div>{topicList}</div>;
 }
