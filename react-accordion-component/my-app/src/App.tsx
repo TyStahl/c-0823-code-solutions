@@ -58,11 +58,11 @@ type PanelProps = {
 
 function Panels({ handleActivePanel, activePanel, topics }: PanelProps) {
   const topicList = topics.map((item, index) => (
-    <div>
+    <div key={item.language + index}>
       <div
         onClick={() => handleActivePanel(item.language)}
         className="titlebox">
-        <h3 key={item.language + index}>{item.language}</h3>
+        <h3>{item.language}</h3>
       </div>
       {activePanel.toLowerCase() === item.language.toLowerCase() && (
         <div className="bodybox">
