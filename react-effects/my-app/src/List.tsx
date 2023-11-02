@@ -12,12 +12,18 @@ export function List() {
   //    - Read the items using `readItems` and update state so the list displays
   //    - Handle errors from `readItems`
   useEffect(() => {
-    try {
-      readItems();
-    } catch (error) {
-      throw new Error();
+    async function evaluate() {
+      try {
+        const itemArray = await readItems();
+        setItems(itemArray);
+        setIsLoading(false);
+      } catch (e) {
+        setError(e);
+        setIsLoading(false);
+      }
     }
-  }, [isLoading]);
+    evaluate();
+  }, []);
 
   if (isLoading) {
     return <div>Loading...</div>;
