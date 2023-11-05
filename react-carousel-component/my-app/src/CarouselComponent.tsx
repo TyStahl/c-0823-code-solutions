@@ -1,9 +1,10 @@
-import { CSSProperties, useState } from 'react';
+import { CSSProperties, useEffect, useState } from 'react';
 type Props = {
   items: string[];
 };
+
 export function CarouselComponent({ items }: Props) {
-  const [current, setCurrent] = useState(4);
+  const [current, setCurrent] = useState(0);
   function handlePrevClick() {
     setCurrent((current - 1 + items.length) % items.length);
   }
@@ -13,6 +14,12 @@ export function CarouselComponent({ items }: Props) {
   function handleSelect(index: number) {
     setCurrent(index);
   }
+
+  useEffect(() => {
+    const id = setTimeout(() => setCurrent((current + 1) % items.length), 1000);
+    return () => clearTimeout(id);
+  });
+
   return (
     <>
       <div className="row">
@@ -30,7 +37,11 @@ type BannerProps = {
   item: string;
 };
 function Banner({ item }: BannerProps) {
-  return <h1>{item}</h1>;
+  return (
+    <div className="imagebox">
+      <img src={item}></img>
+    </div>
+  );
 }
 type ButtonProps = {
   text: string;
@@ -49,6 +60,7 @@ type IndicatorsProps = {
   current: number;
   onSelect: (index: number) => void;
 };
+
 function Indicators({ items, current, onSelect }: IndicatorsProps) {
   const buttons = items.map((item, index) => (
     <Button

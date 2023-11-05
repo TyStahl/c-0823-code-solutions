@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+.imagebox {
+  max-width: 300px;
+  height: 600px;
+}
+
+.imagebox > img {
+  width: 100%;
+}
+
 .row {
   display: flex;
 }

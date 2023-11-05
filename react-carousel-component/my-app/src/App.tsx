@@ -3,12 +3,12 @@ import './App.css';
 import { CarouselComponent } from './CarouselComponent';
 
 const items = [
-  'pikachu',
-  'squirtle',
-  'charmander',
-  'bulbasaur',
-  'heracross',
-  'ashe ketchum',
+  'fushiguro.webp',
+  'inumaki.webp',
+  'itadori.webp',
+  'kugisaki.webp',
+  'panda.webp',
+  'zen-in.webp',
 ];
 
 function App() {
