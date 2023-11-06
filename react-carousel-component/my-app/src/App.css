@@ -10,6 +10,14 @@
   height: 600px;
 }
 
+.b-icons {
+  height: 3rem;
+}
+
+.a-c {
+  align-items: center;
+}
+
 .imagebox > img {
   width: 100%;
 }

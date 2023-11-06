@@ -1,4 +1,5 @@
 import { CSSProperties, useEffect, useState } from 'react';
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 type Props = {
   items: string[];
 };
@@ -22,10 +23,10 @@ export function CarouselComponent({ items }: Props) {
 
   return (
     <>
-      <div className="row">
-        <Button text="Prev" onClick={handlePrevClick} />
+      <div className="row a-c">
+        <FaAngleLeft className="b-icons" onClick={handlePrevClick} />
         <Banner item={items[current]} />
-        <Button text="Next" onClick={handleNextClick} />
+        <FaAngleRight className="b-icons" onClick={handleNextClick} />
       </div>
       <div className="row j-c">
         <Indicators items={items} current={current} onSelect={handleSelect} />
