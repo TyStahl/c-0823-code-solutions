@@ -29,11 +29,11 @@ const topics: TopicsArray = [
 function Accordion() {
   const [activePanel, setActivePanel] = useState<string>('');
 
-  function handleActivePanel(string: string): void {
-    if (activePanel === string) {
+  function handleActivePanel(language: string): void {
+    if (activePanel === language) {
       setActivePanel('');
     } else {
-      setActivePanel(string);
+      setActivePanel(language);
     }
   }
 
@@ -53,7 +53,7 @@ export default Accordion;
 type PanelProps = {
   topics: TopicsArray;
   activePanel: string;
-  handleActivePanel: (string: string) => void;
+  handleActivePanel: (language: string) => void;
 };
 
 function Panels({ handleActivePanel, activePanel, topics }: PanelProps) {
