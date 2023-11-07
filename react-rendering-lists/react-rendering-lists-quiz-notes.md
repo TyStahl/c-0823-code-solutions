@@ -15,7 +15,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - Why do components in a list need to have unique keys?
   so that react knows if they have been changed
 - What is the best value to use as a "key" prop when rendering lists?
-  an id or number that is unique to each element in an array
+  an id or number that is unique to each element in an array.
 
 ## Notes
 
