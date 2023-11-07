@@ -19,31 +19,6 @@ export function ValidatedInput() {
     }
   }
 
-  function ValidOrNot() {
-    if (!password) {
-      return (
-        <span className="is-invalid">
-          <FaTimes />
-          <p>A password is required </p>
-        </span>
-      );
-    }
-    if (psIsValid) {
-      return (
-        <span className="is-valid">
-          <FaCheck />
-        </span>
-      );
-    } else {
-      return (
-        <span className="is-invalid">
-          <FaTimes />
-          <p>Password must be at least 8 characters</p>
-        </span>
-      );
-    }
-  }
-
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -57,8 +32,38 @@ export function ValidatedInput() {
             }}></input>
         </label>
         <button type="submit">Submit</button>
-        <ValidOrNot />
+        <ValidOrNot password={password} psIsValid={psIsValid} />
       </form>
     </>
   );
+}
+
+type ValidorNotProps = {
+  password: string;
+  psIsValid: boolean;
+};
+
+function ValidOrNot({ password, psIsValid }: ValidorNotProps) {
+  if (!password) {
+    return (
+      <span className="is-invalid">
+        <FaTimes />
+        <p>A password is required </p>
+      </span>
+    );
+  }
+  if (psIsValid) {
+    return (
+      <span className="is-valid">
+        <FaCheck />
+      </span>
+    );
+  } else {
+    return (
+      <span className="is-invalid">
+        <FaTimes />
+        <p>Password must be at least 8 characters</p>
+      </span>
+    );
+  }
 }
