@@ -16,19 +16,19 @@ export function BannerSelections({
   index,
   onCustomClick,
 }: SelectionsProps) {
-  if (index === num) {
-    return (
-      <button onClick={() => onCustomClick()} className="c1-6 w">
-        {num}
-      </button>
-    );
-  } else {
-    return (
-      <button onClick={() => onCustomClick()} className="c1-6">
-        {num}
-      </button>
-    );
-  }
+  //   return (
+  //     <button onClick={() => onCustomClick()} className="c1-6 w">
+  //       {num}
+  //     </button>
+  //   );
+  // } else {
+  return (
+    <button
+      onClick={() => onCustomClick()}
+      className={index === num ? 'c1-6 w' : 'c1-6'}>
+      {num}
+    </button>
+  );
 }
 type NextProps = {
   text: string;
@@ -42,15 +42,3 @@ export function NextPrevButton({ text, onClick }: NextProps) {
     </button>
   );
 }
-
-// type PrevProps = {
-//   text: string;
-//   onClick: () => void;
-// };
-// export function PrevButton({ text, onClick }: PrevProps) {
-//   return (
-//     <button onClick={() => onClick()} className="prev">
-//       {text}
-//     </button>
-//   );
-// }
