@@ -12,11 +12,7 @@ const items = [
 ];
 
 function App() {
-  return (
-    <>
-      <CarouselComponent items={items} />
-    </>
-  );
+  return <CarouselComponent items={items} />;
 }
 
 export default App;

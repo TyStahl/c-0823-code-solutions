@@ -19,7 +19,7 @@ export function CarouselComponent({ items }: Props) {
   useEffect(() => {
     const id = setTimeout(() => setCurrent((current + 1) % items.length), 1000);
     return () => clearTimeout(id);
-  });
+  }, [items.length, current]);
 
   return (
     <>
