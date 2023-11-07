@@ -43,10 +43,9 @@ function SearchableList({ list, searchTerm }: SearchableListProps) {
   const quoteList = filteredQuoteList.map((quote, index) => (
     <li key={quote + index}>{quote}</li>
   ));
-  if (!quoteList.length) {
+  if (quoteList.length === 0) {
     return <div>No quotes</div>;
   }
-  0;
   return <ul>{quoteList}</ul>;
 }
 
