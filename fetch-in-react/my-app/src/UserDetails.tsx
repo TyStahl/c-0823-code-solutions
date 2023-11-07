@@ -14,6 +14,7 @@ export function UserDetails({ userId, onCancel }: Props) {
 
   /* your code here (hint: useEffect) */
   useEffect(() => {
+    setIsLoading(true);
     async function getUser() {
       try {
         const res = await fetch(
@@ -24,13 +25,13 @@ export function UserDetails({ userId, onCancel }: Props) {
         }
         const newuser = await res.json();
         setUser(newuser);
-        setIsLoading(false);
       } catch (err) {
         setError(err);
+      } finally {
+        setIsLoading(false);
       }
     }
     getUser();
-    return () => setIsLoading(false);
   }, [userId]);
 
   if (isLoading) {

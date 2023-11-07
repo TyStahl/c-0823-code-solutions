@@ -20,6 +20,7 @@ export function Users() {
 
   /* your code here (hint: useEffect) */
   useEffect(() => {
+    setIsLoading(true);
     async function getUsers() {
       try {
         const res = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -28,14 +29,14 @@ export function Users() {
         }
         const newusers = await res.json();
         setUsers(newusers);
-        setIsLoading(false);
       } catch (err) {
         setError(err);
+      } finally {
+        setIsLoading(false);
       }
     }
     getUsers();
-    return () => setIsLoading(false);
-  }, [isLoading]);
+  }, []);
 
   if (isLoading) {
     return <p>Loading...</p>;
