@@ -80,8 +80,7 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
     }
 
     const payload = { userId, username };
-
-    const signedToken = jwt.sign(payload, 'secret');
+    const signedToken = jwt.sign(payload, hashKey);
     const token = { user: payload, token: signedToken };
     res.status(201).json(token);
 
