@@ -8,7 +8,28 @@ type Image = {
 };
 
 export function UploadForm() {
+  const [imageFile, setImageFile] = useState<Image>();
+  const [imageFileURL, setImageFileURL] = useState<string>('');
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    try {
+      const response = await fetch('/api/uploads', {
+        method: 'POST',
+        body: formData,
+      });
+      if (!response.ok) {
+        throw new Error('upload failed');
+      }
+      const result = await response.json();
+      setImageFile(result);
+      setImageFileURL(result.url);
+      console.log(result);
+      console.log(imageFile);
+    } catch (e) {
+      console.error(e);
+    }
+
     /* Prevent the browser's default behavior for form submissions.
      * Create a `new` FormData object from the `event`.
      *
@@ -31,6 +52,7 @@ export function UploadForm() {
     <div className="container">
       <div className="row min-vh-100 pb-5 justify-content-center align-items-center">
         <div className="col col-md-8">
+          {imageFileURL && <img src={imageFileURL}></img>}
           <h3 className="text-center mb-5">React File Uploads</h3>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
