@@ -88,6 +88,7 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
 
 app.get('/api/entries', authMiddleware, async (req, res, next) => {
   try {
+    // Don't need req.user check because authMiddleware will prevent this function from executing if req.user is undefined.
     if (!req.user) {
       throw new ClientError(401, 'not logged in');
     }
@@ -105,6 +106,7 @@ app.get('/api/entries', authMiddleware, async (req, res, next) => {
 
 app.post('/api/entries', authMiddleware, async (req, res, next) => {
   try {
+    // Don't need req.user check because authMiddleware will prevent this function from executing if req.user is undefined.
     if (!req.user) {
       throw new ClientError(401, 'not logged in');
     }
@@ -131,6 +133,7 @@ app.post('/api/entries', authMiddleware, async (req, res, next) => {
 
 app.put('/api/entries/:entryId', authMiddleware, async (req, res, next) => {
   try {
+    // Don't need req.user check because authMiddleware will prevent this function from executing if req.user is undefined.
     if (!req.user) {
       throw new ClientError(401, 'not logged in');
     }
@@ -164,6 +167,7 @@ app.put('/api/entries/:entryId', authMiddleware, async (req, res, next) => {
 
 app.delete('/api/entries/:entryId', authMiddleware, async (req, res, next) => {
   try {
+    // Don't need req.user check because authMiddleware will prevent this function from executing if req.user is undefined.
     if (!req.user) {
       throw new ClientError(401, 'not logged in');
     }
