@@ -8,15 +8,13 @@ import { NotFound } from './pages/NotFound';
 
 export function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Header />}>
-          <Route index element={<Catalog />}></Route>
-          <Route path="details/:productId" element={<ProductDetails />}></Route>
-          <Route path="about" element={<About />}></Route>
-          <Route path="*" element={<NotFound />}></Route>
-        </Route>
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Header />}>
+        <Route index element={<Catalog />}></Route>
+        <Route path="details/:productId" element={<ProductDetails />}></Route>
+        <Route path="about" element={<About />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Route>
+    </Routes>
   );
 }
