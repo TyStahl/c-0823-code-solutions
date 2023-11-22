@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.imagebox {
+  max-width: 300px;
+  height: 600px;
+}
+
+.b-icons {
+  height: 3rem;
+}
+
+.a-c {
+  align-items: center;
+}
+
+.imagebox > img {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.npbuttons {
+  display: flex;
+  align-items: center;
+}
+
+.j-c {
+  justify-content: space-around;
+}
+
+.indicators {
+  flex-basis: calc(100 / 6);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
